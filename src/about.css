@@ -1,0 +1,259 @@
+* {
+    padding: 0px;
+    margin: 0pc;
+    box-sizing: border-box;
+    /* color: white; */
+}
+
+/* -------------- About ------------------- */
+.About {
+    min-height: 570px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div>span>a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.shap {
+    position: absolute;
+}
+
+.IN-Ab {
+    min-height: 450px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abpin1 {
+    width: 217px;
+    top: 9%;
+    left: 0%;
+}
+
+.abpin2 {
+    top: 27%;
+    height: 355px;
+    width: 318px;
+    left: 17%;
+}
+
+.abpin3 {
+    height: 150px;
+   top: 81%;
+    right: 50%;
+    width: 146px;
+}
+
+.shap {
+    animation: scroll-up-down 2s infinite alternate ease-in-out;
+}
+
+.resume-link {
+    display: flex;
+    padding: 3px 3px;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    border: 1px dotted white;
+    margin-top: 20px;
+    width: 109px;
+    border-radius: 33px;
+    text-align: center;
+}
+.resume-link:hover {
+    transform: scale(1.1);
+}   
+.resume-link a{
+    text-decoration: none;
+}
+
+
+@keyframes scroll-up-down {
+    0% {
+        transform: translateY(0);
+        rotate: -20deg;
+
+    }
+
+    /* 50%  { transform: translateY(-40%); } */
+    100% {
+        transform: translateY(-30%);
+        rotate: 20deg;
+    }
+}
+
+/* --------- TEXT animation -------------  */
+.para>p {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+        color: rgb(255, 1, 1)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        color: rgb(255, 255, 255)
+    }
+}
+
+/* ---------------- */
+.para {
+    color: white;
+    line-height: 25px;
+    text-align: start;
+}
+
+.para:nth-child(3) {
+    position: relative;
+}
+
+.My-name {
+    margin-bottom: 10px;
+}
+
+
+
+
+/* ------------------ Responsive ---------------------- */
+/* ---------------------- Mobile ------------------------ */
+@media screen and (min-width:300px) and (max-width:600px) {
+
+    /* about */
+    .About {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .IN-Ab {
+        width: 80%;
+    }
+
+    .abpin1 {
+        height: 100px;
+        /* justify-content: flex-end; */
+        width: 100px;
+        left: 36px;
+    }
+
+    .abpin2 {
+        top: 19%;
+        height: 156px;
+        width: 143px;
+        left: 37%;
+    }
+
+    .abpin3 {
+        height: 100px;
+        top: 41%;
+        right: 6%;
+        width: 100px;
+    }
+
+    /* -----------  ABout ----------- */
+    .Cards {
+        height: 24rem;
+        width: 17rem;
+    }
+
+    .Ab2 {
+        width: 75%;
+        margin-left: 10px;
+        min-height: 117px;
+    }
+
+    .para {
+        margin-bottom: 32px;
+    }
+
+}
+
+/* ------------------- Tablet ------------------------ */
+@media screen and (min-width:600px) and (max-width:900px) {
+    .abpin1 {
+        width: 185px;
+        top: 5%;
+        left: 0%;
+    }
+
+    .abpin2 {
+        top: 27%;
+        height: 248px;
+        width: 210px;
+        left: 21%;
+    }
+
+    .abpin3 {
+        height: 150px;
+        top: 48%;
+        right: 17%;
+        width: 146px;
+    }
+
+    .Ab2 {
+        width: 80%;
+    }
+
+}
+
+/*---------------------- Laptop ------------------------- */
+@media screen and (min-width:900px) and (max-width:1200px) {
+    .IN-Ab {
+        min-height: 400px;
+        width: 480px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .abpin1 {
+        width: 168px;
+        top: 9%;
+        left: 3%;
+    }
+
+    .abpin3 {
+        height: 150px;
+        top: 87%;
+        right: 55%;
+        width: 146px;
+    }
+
+    .abpin2 {
+        top: 31%;
+        height: 255px;
+        width: 226px;
+        left: 17%;
+    }
+
+
+}

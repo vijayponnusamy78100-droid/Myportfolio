@@ -1,0 +1,98 @@
+/* Navbar container */
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #0f172a;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo h2 {
+  color: #00ffcc;
+}
+
+/* btn icon  */
+.Icon {
+  background-color: #000000;
+  margin: 3px 3px;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Hover animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: #cd0000;
+  transition: 0.3s;
+}
+.text-decoration{
+  text-decoration: none;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 📱 Mobile View */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    /* background: #0d1526; */
+    backdrop-filter: blur(21px);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* ------------------ Responsive ---------------------- */
+/* ---------------------- Mobile ------------------------ */
+@media screen and (min-width:300px) and (max-width:600px) {}
+
+/* ------------------- Tablet ------------------------ */
+@media screen and (min-width:600px) and (max-width:900px) {}
+
+/*---------------------- Laptop ------------------------- */
+@media screen and (min-width:900px) and (max-width:1200px) {}

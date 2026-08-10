@@ -1,0 +1,415 @@
+* {
+  padding: 0px;
+  margin: 0pc;
+  box-sizing: border-box;
+  /* color: white; */
+}
+
+/* ----------------------- Education ------------------------ */
+
+.education-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 13px 17px 20px;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(255, 35, 55, 0.06), transparent 35%),
+    #03060d;
+  color: #ffffff;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.education-container {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+h3{
+      border-bottom: 1px dotted white;
+}
+
+/* Heading */
+
+.education-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.education-icon {
+  font-size: 34px;
+  margin-bottom: 8px;
+  filter: drop-shadow(0 0 8px rgba(255, 45, 55, 0.8));
+}
+
+.education-heading h2 {
+  margin: 0;
+  font-size: clamp(31px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.heading-line,
+.journey-line {
+  position: relative;
+  width: 120px;
+  height: 4px;
+  margin: 10px auto 14px;
+  background: #ff2938;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(255, 41, 56, 0.8);
+}
+
+.heading-line::after,
+.journey-line::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  right: -10px;
+  top: -1px;
+  border-radius: 50%;
+  background: #ff2938;
+}
+
+.education-heading p {
+  margin: 0;
+  color: #a8adb8;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Progress circles */
+
+.progress-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 70px;
+}
+
+.progress-item {
+  text-align: center;
+}
+
+.education-progress {
+  position: relative;
+  width: 210px;
+  height: 210px;
+  margin: 0 auto 16px;
+}
+
+.progress-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  overflow: visible;
+}
+
+.progress-svg circle {
+  fill: none;
+  stroke-width: 16;
+}
+
+.progress-bg {
+  stroke: #252a33;
+}
+
+.progress-bar {
+  stroke: #ff2938;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 9px rgba(255, 41, 56, 0.8));
+  transition: stroke-dashoffset 0.8s ease;
+}
+
+.progress-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-content strong {
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.progress-content span {
+  color: #c5c9d1;
+  font-size: 15px;
+}
+
+.education-small-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 12px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #ff2938;
+  border-radius: 10px;
+  font-size: 21px;
+  box-shadow: 0 0 10px rgba(255, 41, 56, 0.15);
+}
+
+.progress-item h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.education-year {
+  margin: 7px 0 0;
+  color: #a3a8b3;
+}
+
+/* Academic journey */
+
+.journey-heading {
+  margin-bottom: 38px;
+}
+
+.journey-heading h3 {
+  margin: 0;
+  font-size: 23px;
+}
+
+.journey-line {
+  margin: 8px 0 0;
+  width: 48px;
+  height: 3px;
+}
+
+.journey {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.journey-line-horizontal {
+  position: absolute;
+  left: 9%;
+  right: 9%;
+  top: -16px;
+  height: 1px;
+  background: #464b56;
+}
+
+.education-card {
+  position: relative;
+  min-height: 190px;
+  padding: 25px 22px;
+  border: 1px solid #262c37;
+  border-left: 1px solid #ff2938;
+  border-radius: 12px;
+  background: linear-gradient(145deg, rgba(18, 23, 33, 0.9), rgba(6, 10, 17, 0.9));
+  box-sizing: border-box;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff2938;
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 50%;
+  top: -23px;
+  transform: translateX(-50%);
+  border: 1px solid #03060d;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow:
+    0 0 0 2px #ff2938,
+    0 0 15px rgba(255, 41, 56, 0.7);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-year {
+  color: #ff3b48;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-percent {
+  padding: 6px 12px;
+  border: 1px solid #ff2938;
+  border-radius: 20px;
+  color: #ff3b48;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.education-card h4 {
+  margin: 17px 0 12px;
+  font-size: 19px;
+}
+
+.card-board {
+  margin: 0 0 12px;
+  color: #aeb3bd;
+  font-size: 14px;
+}
+
+.card-description {
+  margin: 0;
+  color: #b7bcc6;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* Resume button */
+
+.resume-button {
+  display: block;
+  margin: 42px auto 0;
+  padding: 12px 25px;
+  border: 1px solid #ff2938;
+  border-radius: 30px;
+  background: transparent;
+  color: #ff3947;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.resume-button:hover {
+  background: #ff2938;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(255, 41, 56, 0.35);
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+  .education-section {
+    padding: 60px 18px;
+  }
+
+  .progress-wrapper {
+    gap: 25px;
+  }
+
+  .education-progress {
+    width: 180px;
+    height: 180px;
+  }
+
+  .journey {
+    gap: 18px;
+  }
+
+  .education-card {
+    padding: 20px 17px;
+  }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+  .education-section {
+    padding: 55px 15px 65px;
+  }
+
+  .education-heading {
+    margin-bottom: 40px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .education-heading p {
+    font-size: 14px;
+  }
+
+  .progress-wrapper {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    margin-bottom: 60px;
+  }
+
+  .education-progress {
+    width: 190px;
+    height: 190px;
+  }
+
+  .journey {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-left: 10px;
+  }
+
+  .journey-line-horizontal {
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    height: auto;
+  }
+
+  .education-card {
+    margin-left: 15px;
+  }
+
+  .timeline-dot {
+    left: -17px;
+    top: 25px;
+  }
+
+  .journey-heading {
+    margin-bottom: 30px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 400px) {
+  .education-section {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .education-progress {
+    width: 170px;
+    height: 170px;
+  }
+
+  .progress-content strong {
+    font-size: 26px;
+  }
+
+  .education-card {
+    padding: 18px 15px;
+  }
+
+  .card-top {
+    align-items: flex-start;
+  }
+
+  .card-year {
+    font-size: 12px;
+  }
+
+  .card-percent {
+    padding: 5px 9px;
+    font-size: 12px;
+  }
+}

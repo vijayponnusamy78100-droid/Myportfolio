@@ -1,0 +1,170 @@
+* {
+    padding: 0px;
+    margin: 0pc;
+    box-sizing: border-box;
+}
+
+
+/* -------------------- Skils ----------------- */
+.Skils {
+    padding: 10px;
+    min-height: 650px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 55px;
+    padding: 20px;
+}
+
+h3 {
+    border-bottom: 2px dashed white;
+}
+
+.Cards {
+    height: 24rem;
+    width: 16rem;
+    margin: 43px 0 0 0;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 10px;
+    animation: animate 2s ease forwards;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.Round {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 1px;
+    right: 0px;
+    border-radius: 0 12% 0 100%;
+    background-color: #464c4c;
+}
+
+.backNum1 {
+    background-color: black;
+}
+
+.Cards>.backNum1 {
+    position: absolute;
+    top: 31%;
+    font-size: 71px;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+    left: -48px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tool>img {
+    height: 54%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool>img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.accesBtn>button {
+    height: 40px;
+    color: white;
+    min-width: 100px;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 8, 122);
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.accesBtn>button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: rgb(0, 0, 0);
+}
+
+.Icon-planet {
+    display: inline-block;
+    color: whitesmoke;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+
+    }
+
+    50% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+.accesBtn>:hover:before {
+    background-color: rgb(0, 150, 73);
+}
+
+.accesBtn>button:hover:after {
+    background-color: rgb(226, 255, 10);
+}
+
+/* ------------------ Responsive ---------------------- */
+/* ---------------------- Mobile ------------------------ */
+@media screen and (min-width:300px) and (max-width:600px) {
+    .Skils {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Cards {
+        height: 19rem;
+        width: 13rem;
+    }
+}
+
+/* ------------------- Tablet ------------------------ */
+@media screen and (min-width:600px) and (max-width:900px) {
+    .Skils {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*---------------------- Laptop ------------------------- */
+@media screen and (min-width:900px) and (max-width:1200px) {}
