@@ -1,18 +1,18 @@
-
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./index.jsx"
 import About from "./about.jsx";
 import Skills from "./skill.jsx";
 import Education from "./education.jsx";
-import Project from "./project.jsx";
+import Project from "./projects.jsx";
 import Nav from "./NavBar.jsx";
 import Contect from "./contect.jsx";
 
 function App() {
- 
+  const [count, setCount] = useState(0);
   return (
     <>
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <BrowserRouter>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
