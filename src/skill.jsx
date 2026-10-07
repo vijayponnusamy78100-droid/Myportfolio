@@ -17,7 +17,7 @@ export default function Skill() {
 
     const users = [
         {
-            id: 43,
+            id: 1,
             tool: html,
             skill: "HTML",
         },
