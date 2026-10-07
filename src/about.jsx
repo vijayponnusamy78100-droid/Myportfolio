@@ -30,7 +30,7 @@ export default function About() {
                                 functional web experiences and I'm always learning new tools to sharpen my craft.
                              </p>
                              <div className="resume-link">
-                                <a href="https://drive.google.com/file/d/1pHHyWFlFfnuumYn1ntOZU7jQMmH8K4Ch/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                <a href="https://drive.google.com/file/d/18FicYLNa8x0XJzzxVYw87UPX9_9DZNgM/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                                     Resume Link
                                 </a>
                             </div>

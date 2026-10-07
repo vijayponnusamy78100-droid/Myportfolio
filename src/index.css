@@ -1,12 +1,12 @@
 * {
     padding: 0px;
-    margin: 0pc;
+    margin: 0px;
     box-sizing: border-box;
-    color: white;
+    /* color: white; */
 }
 
 .Overall {
-    min-height: 670px;
+    min-height: calc(100vh - 70px);
     color: wheat;
     width: 100%;
     padding: 10px;
